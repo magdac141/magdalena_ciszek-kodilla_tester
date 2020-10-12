@@ -13,7 +13,4 @@ public class MainExtended {
         System.out.println(varChar);
         System.out.println(isGoodProgrammer);
     }
-
-
-
-    }
+}
