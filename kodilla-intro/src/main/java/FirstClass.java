@@ -7,7 +7,7 @@ public class FirstClass {
         notebook.checkWeight();
         System.out.println("-----------------------------------------------------");
         //
-        Notebook heavyNotebook = new Notebook("2000g", 1111, 2005);
+        Notebook heavyNotebook = new Notebook("2000g", 1112, 2005);
         System.out.println("heavyNotebook z roku " + heavyNotebook.year + " waży " + heavyNotebook.weight + " i kosztuje " + heavyNotebook.price);
         heavyNotebook.checkPrice();
         heavyNotebook.checkWeight();

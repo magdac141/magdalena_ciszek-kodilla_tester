@@ -5,7 +5,7 @@ public class Notebook {
     String strW = "";
     int weightInt = 0;
     int yearOld = 2010;
-    int yearNew = 2018;
+    int yearNew = 2019;
 
     public Notebook(String weight, int price, int year) {
         this.weight = weight;
