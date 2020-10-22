@@ -1,45 +1,43 @@
 public class Notebook {
-    String weight;
+    int weight;
     int price;
     int year;
-    String strW = "";
-    int weightInt = 0;
-    int yearOld = 2010;
-    int yearNew = 2019;
 
-    public Notebook(String weight, int price, int year) {
+
+
+    public Notebook(int weight, int price, int year) {
         this.weight = weight;
         this.price = price;
         this.year = year;
-        this.strW = this.weight;
+
     }
 
     public void checkPrice() {
         if (this.price < 600) {
-            if (this.year <= yearOld) System.out.println("This notebook is very cheap and very OLD");
-            else if (this.year > yearOld && this.year <= yearNew ) System.out.println("This notebook is very cheap and not so old");
-            else System.out.println("This notebook is very cheap AND new...is that real price for such new hardware?");
-        }
-        else if (this.price >= 600 && this.price <= 1000 ) {
-            if (this.year <= yearOld) System.out.println("The price is good but notebook is very OLD");
-            else if (this.year > yearOld && this.year <= yearNew ) System.out.println("The price is good and notebook is not so old");
-            else System.out.println("The price is good AND notebook is new.");
-        }
-        else {
-            if (this.year <= yearOld) System.out.println("This notebook is Expensive and OLD. Bad deal.");
-            else if (this.year > yearOld && this.year <= yearNew ) System.out.println("This notebook is expensive and not so old");
-            else System.out.println("This notebook is expensive BUT NEW");
+            System.out.println("This notebook is cheap.");
+        } else if (this.price >= 600 && this.price <= 1000) {
+            System.out.println("The price is good.");
+        } else if (this.price > 1000) {
+            System.out.println("This notebook is expensive.");
         }
     }
+
     public void checkWeight() {
-        this.strW = this.strW.substring(0, this.strW.length()-1);
-        weightInt = Integer.parseInt(this.strW.trim());
-        if (weightInt < 1000) System.out.println("This notebook is light.");
-        else if (weightInt >= 1000 && weightInt <= 1800) {
-            System.out.println("This notebook is not so heavy.");
+        if (this.weight < 1200){
+            System.out.println("This notebook is light.");
+        } else if (this.weight >= 1200 && this.weight <= 2000){
+            System.out.println("This notebook is not too heavy.");
+        } else if (this.weight > 2000){
+            System.out.println("This notebook is heavy.");
         }
-        else {
-            System.out.println("This notebook is VERY heavy.");
+    }
+    public void checkYearAndPrice() {
+        if (this.year >= 2020 && this.price <=1000){
+            System.out.println("This notebook is new, with good price.");
+        } else if (this.year < 2020 && this.year > 2016 && this.price <= 1500){
+            System.out.println("This notebook is quite new and expensive.");
+        } else if (this.year <= 2016 && this.price < 600){
+            System.out.println("This notebook is old and cheap.");
         }
     }
 }
