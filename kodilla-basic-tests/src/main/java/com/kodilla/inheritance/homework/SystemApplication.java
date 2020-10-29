@@ -3,13 +3,13 @@ package com.kodilla.inheritance.homework;
 public class SystemApplication {
     public static void main(String[] args) {
 
-        OperatingSystem1 operatingSystem1 = new OperatingSystem1(1950);
-        operatingSystem1.turnOn();
+        Windows7 windows7 = new Windows7(1950);
+        windows7.turnOn();
 
-        OperatingSystem2 operatingSystem2 = new OperatingSystem2(1980);
-        operatingSystem2.turnOff();
+        Windows10 windows10 = new Windows10(1980);
+        windows10.turnOff();
 
-        System.out.println(operatingSystem2.getYearOfIssue());
+        System.out.println(windows10.getYearOfIssue());
     }
 
 }
