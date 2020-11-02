@@ -1,4 +1,4 @@
-package com.kodilla.abstracts.homewok;
+package com.kodilla.abstracts.homework;
 
 public class Doctor extends Job {
 
